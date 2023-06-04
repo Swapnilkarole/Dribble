@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+  <title>Sign In</title>
+  <style>
+    .left {
+      height: 100vh;
+      width: 40%;
+      background-color: #F1CDD7;
+      background-size: cover;
+      padding: 40px 0px 0px 60px;
+    }
+
+    .right {
+      height: 100%;
+      width: 60%;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    .logo {
+      color: #ad7d90;
+    }
+
+    .logo:hover {
+      color: #865C6C;
+    }
+
+    .head {
+      color: #865C6C;
+      font-size: 32px;
+      font: bold 26px "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+
+    .sign-link {
+      text-align: right;
+      font-size: 15px;
+      margin: 30px 15px 0 0;
+    }
+
+    h2 {
+      font: bold 24px/29px "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+
+    .google {
+      color: whitesmoke;
+    }
+  </style>
+</head>
+
+<body>
+  <div style="display: flex;">
+    <span class="left">
+      <h1 class="logo"><a href="./Index.html">Dribble</a></h1>
+      <h1 class="head">Discover the world’s top<br> Designers & Creatives.</h1>
+    </span>
+    <span class="right">
+
+      <p class="sign-link">
+        Not a member? <a href="./SignUp.html">Sign up now</a>
+      </p>
+      <div style="margin: 9% 0% 0% 22%; width: 55%;">
+        <h2>Sign in to Dribbble</h2><br>
+        <div>
+          <div>
+            <button class="btn btn-primary" style="background-color:#1A73E8; width: 60%;">
+              <a class="google" href="#">
+                <img width="20px" style="margin-bottom:3px; margin-right:60px;" alt="Google login"
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/512px-Google_%22G%22_Logo.svg.png" />
+                Sign in with Google
+              </a>
+            </button>
+            &nbsp;&nbsp;
+            <button class="btn btn-primary" ; style="background-color: #E5E5E5;">
+              <a><i class="fab fa-twitter" style="color: blue;"></i></a>
+            </button>
+            <br><br>
+            <div style="width: 100%; height: 20px; border-bottom: 1px solid black; text-align: center">
+              <span style="font-size: 16px; background-color: #FFFFFF; padding: 0 10px;">
+                Or
+              </span>
+            </div>
+            <br><br>
+          </div>
+          <div class="auth-form sign-in-form">
+            <form method="post">
+              <div class="form-fields">
+                <fieldset>
+                  <label for="login">Username or Email Address</label><br>
+                  <input type="text" name="login" id="login" tabindex="1" class="form-control" />
+                </fieldset>
+                <br>
+                <fieldset>
+                  <label for="password" class="password">Password </label><a style="margin-left: 55%;" href="#">Forgot password?</a><br>
+                  <input type="password" name="password" id="password" value="" tabindex="2" class="form-control" />
+                </fieldset>
+              </div>
+              <br>
+              <input style="width: 45%; background-color: #EA4C89;" type="submit" value="Sign In" tabindex="3" class="btn btn-danger" />
+            </form>
+          </div>
+        </div>
+      </div>
+    </span>
+  </div>
+</body>
+
+</html>
